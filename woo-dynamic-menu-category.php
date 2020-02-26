@@ -6,6 +6,10 @@
  * Author: Numan
  * Author URI: https://www.numanhussain.com
  * Version: 1.0.0
- * License: All Rights Reserved
- *
+ * License: All Rights Reserved*
  */
+
+ // Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+  }
