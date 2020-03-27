@@ -17,6 +17,11 @@ if(!defined(ABSPATH)){
 } 
 
 function wdmc_activation_hook(){
- 
+  // start coding from here
 }
 register_activation_hook(__FILE__, "wdmc_activation_hook");
+
+function wdmc_deactivation_hook(){
+
+}
+register_deactivation_hook(__FILE__, "wdmc_deactivation_hook");
