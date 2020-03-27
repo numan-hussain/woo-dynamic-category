@@ -14,4 +14,9 @@
 
 if(!defined(ABSPATH)){
   die("Access denied");
+} 
+
+function wdmc_activation_hook(){
+ 
 }
+register_activation_hook(__FILE__, "wdmc_activation_hook");
