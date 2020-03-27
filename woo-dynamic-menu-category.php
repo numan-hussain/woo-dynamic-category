@@ -8,7 +8,7 @@
  * Version: 1.0.0
  * License: GPLv2 or Later
  * Text Domain: wdmc
- * Domain path: languages
+ * Domain path: /languages/
  */
 
 
@@ -27,3 +27,7 @@ function wdmc_deactivation_hook(){
 register_deactivation_hook(__FILE__, "wdmc_deactivation_hook");
 
 
+function wdmc_load_textdomain(){
+    load_plugin_textdomain( 'wdmc',false,dirname(__FILE__). "/languages");
+}
+add_action("plugins_loaded", "wdmc_load_textdomain");
